@@ -6,11 +6,17 @@
 
 class	Contact
 {
-    std::string f_name;
-    std::string l_name;
-    std::string n_name;
-    std::string p_number;
-    std::string d_secret;
+    private:
+        std::string f_name;
+        std::string l_name;
+        std::string n_name;
+        std::string p_number;
+        std::string d_secret;
+	    std::string	getShortStr(std::string str);
+	public:
+		void	AddContact(void);
+		void	PrintShortContact(void);
+		void	PrintAllContact(void);
 };
 
 #endif
