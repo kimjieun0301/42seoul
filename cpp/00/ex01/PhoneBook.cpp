@@ -1,7 +1,11 @@
 #include "PhoneBook.hpp"
 
-void	PhoneBook::AddContact(void)
+PhoneBook::PhoneBook(void)
 {
-	this->contacts[idx % 8].AddContact();
-	this->idx++;
+	this->idx = 0;
+}
+
+void	PhoneBook::Add(void)
+{
+	this->contacts[idx % 8].Add();
 }

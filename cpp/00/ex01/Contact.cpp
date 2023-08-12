@@ -1,6 +1,6 @@
 #include "Contact.hpp"
 
-void	Contact::AddContact(void)
+void	Contact::Add(void)
 {
 	std::cout << "first name ::" << std::endl;
 	std::cin >> this->f_name;

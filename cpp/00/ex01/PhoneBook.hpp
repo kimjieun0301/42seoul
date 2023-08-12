@@ -11,7 +11,7 @@ class	PhoneBook
 		int		idx;
 	public:
 		PhoneBook();
-		void	AddContact();
-		void	PrintContact();		
+		void	Add();
+		void	Search();	
 };
 #endif

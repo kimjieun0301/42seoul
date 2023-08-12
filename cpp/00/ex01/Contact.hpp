@@ -14,7 +14,7 @@ class	Contact
         std::string d_secret;
 	    std::string	getShortStr(std::string str);
 	public:
-		void	AddContact(void);
+		void	Add(void);
 		void	PrintShortContact(void);
 		void	PrintAllContact(void);
 };

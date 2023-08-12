@@ -5,8 +5,8 @@ CC			=	c++
 CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
 
 SRCS		=	PhoneBook.cpp\
-				#PhoneBook.hpp\
-				#Contact.cpp\
+				main.cpp\
+				Contact.cpp\
 
 OBJS		=	$(SRCS:.cpp=.o)
 
