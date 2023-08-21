@@ -7,15 +7,22 @@ int main()
 
 	while(true)
 	{
-		std::cout << "Enter one of three commands(ADD, SEARCH, EXIT)" << std::endl;
-		std::cin >> cmd;
-		if (cmd == "ADD")
+		if (!std::cin.eof())
+		{
+			std::cout << "Enter one of three commands(ADD, SEARCH, EXIT)" << std::endl;
+			std::cin >> cmd;
+		}
+		if (std::cin.eof())
+		{
+			exit(0);
+		}
+		else if (cmd == "ADD")
 		{
 			PhoneBook.Add();
 		}
 		else if(cmd == "SEARCH")
 		{
-			//PhoneBook.Search();
+			PhoneBook.Search();
 		}
 		else if(cmd == "EXIT")
 		{

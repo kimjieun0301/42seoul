@@ -2,7 +2,8 @@
 # define CONTACT_HPP
 
 # include <iostream>
-# include <string>
+# include <iomanip>
+//# include <string>
 
 class	Contact
 {
@@ -12,11 +13,11 @@ class	Contact
         std::string n_name;
         std::string p_number;
         std::string d_secret;
-	    std::string	getShortStr(std::string str);
+	    void	PrintSet(std::string str);
 	public:
-		void	Add(void);
-		void	PrintShortContact(void);
-		void	PrintAllContact(void);
+		void	Add();
+		void	PrintSearch();
+        void	PrintDetails();
 };
 
 #endif

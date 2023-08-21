@@ -12,6 +12,6 @@ class	PhoneBook
 	public:
 		PhoneBook();
 		void	Add();
-		void	Search();	
+		void	Search();
 };
 #endif
