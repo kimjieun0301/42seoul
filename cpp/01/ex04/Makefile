@@ -1,13 +1,10 @@
-NAME		=	Weapon
+NAME		=	Sed_is_for_losers
 
 CC			=	c++
 
 CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
 
-SRCS		=	Weapon.cpp \
-				HumanA.cpp \
-				HumanB.cpp \
-				main.cpp
+SRCS		=	main.cpp 
 
 OBJS		=	$(SRCS:.cpp=.o)
 

@@ -72,6 +72,12 @@
         "xstddef": "cpp",
         "xstring": "cpp",
         "xtr1common": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "iomanip": "cpp",
+        "list": "cpp",
+        "xhash": "cpp",
+        "xlocmon": "cpp",
+        "xloctime": "cpp",
+        "fstream": "cpp"
     }
 }
