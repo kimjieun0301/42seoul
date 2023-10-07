@@ -3,6 +3,7 @@
 
 # include <iostream>
 # include <exception>
+class AForm;
 
 class Bureaucrat 
 {
@@ -11,10 +12,10 @@ class Bureaucrat
         int grade;
     public:
         Bureaucrat();
-		Bureaucrat(std::string name, int grade);
         Bureaucrat(const Bureaucrat& obj);
         Bureaucrat& operator=(const Bureaucrat& obj);
         virtual ~Bureaucrat();
+		Bureaucrat(std::string name, int grade);
 
 		std::string	getName() const;
 		int	getGrade() const;
@@ -22,6 +23,8 @@ class Bureaucrat
 		void	incrementGrade();
 		void	decrementGrade();
 
+		void signForm(AForm& f) const;
+		void	executeForm(AForm const & form);
 		class GradeTooHighException : public std::exception
 		{
 			public:

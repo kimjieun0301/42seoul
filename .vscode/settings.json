@@ -78,6 +78,9 @@
         "xhash": "cpp",
         "xlocmon": "cpp",
         "xloctime": "cpp",
-        "fstream": "cpp"
+        "fstream": "cpp",
+        "__verbose_abort": "cpp",
+        "charconv": "cpp",
+        "variant": "cpp"
     }
 }
