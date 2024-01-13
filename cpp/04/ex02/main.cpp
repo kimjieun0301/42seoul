@@ -2,8 +2,14 @@
 #include "Cat.hpp"
 #include "Dog.hpp"
 
+// void   check_leak(void)
+// {
+// 	system("leaks Animal_Brain");
+// }
+
 int main()
 {
+	//atexit(check_leak);
 	Animal *d = new Dog();
 	Animal *c = new Cat();
 	std::string str;
