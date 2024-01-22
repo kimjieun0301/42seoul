@@ -14,7 +14,8 @@ WrongCat::WrongCat(const WrongCat& obj)
 
 WrongCat& WrongCat::operator=(const WrongCat& obj) 
 {
-	this->type = obj.type;
+	if (this != &obj)
+		this->type = obj.type;
 	std::cout << "WrongCat operator= called" << std::endl;
 	return (*this);
 }

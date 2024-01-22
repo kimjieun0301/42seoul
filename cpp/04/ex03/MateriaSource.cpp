@@ -39,7 +39,7 @@ void	MateriaSource::learnMateria(AMateria* m)
 {
 	if (idx == 4)
 		delete m;
-	else
+	else if (slot[idx] == NULL)
 	{
 		slot[idx] = m;
 		idx++;

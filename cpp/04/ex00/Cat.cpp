@@ -14,7 +14,8 @@ Cat::Cat(const Cat& obj)
 
 Cat& Cat::operator=(const Cat& obj) 
 {
-	this->type = obj.type;
+	if (this != &obj)
+		this->type = obj.type;
 	std::cout << "Cat operator= called" << std::endl;
 	return (*this);
 }

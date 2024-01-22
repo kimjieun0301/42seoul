@@ -14,7 +14,8 @@ WrongAnimal::WrongAnimal(const WrongAnimal& obj)
 
 WrongAnimal& WrongAnimal::operator=(const WrongAnimal& obj) 
 {
-	this->type = obj.type;
+	if (this != &obj)
+		this->type = obj.type;
 	std::cout << "WrongAnimal operator= called" << std::endl;
 	return (*this);
 }

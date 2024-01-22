@@ -14,7 +14,8 @@ Animal::Animal(const Animal& obj)
 
 Animal& Animal::operator=(const Animal& obj) 
 {
-	this->type = obj.type;
+	if (this != &obj)
+		this->type = obj.type;
 	std::cout << "Animal operator= called" << std::endl;
 	return (*this);
 }

@@ -10,6 +10,11 @@ Dog::Dog()
 Dog::Dog(const Dog& obj) 
 {
 	this->type = obj.type;
+	if (this->brain != NULL) 
+	{
+		delete this->brain;
+		this->brain = NULL;
+	}
 	this->brain = new Brain();
 	*(this->brain) = *(obj.brain);
 	std::cout << "Dog copy constructor called" << std::endl;
@@ -17,8 +22,17 @@ Dog::Dog(const Dog& obj)
 
 Dog& Dog::operator=(const Dog& obj) 
 {
-	this->type = obj.type;
-	*(this->brain) = *(obj.brain);
+	if (this != &obj)
+	{
+		this->type = obj.type;
+		if (this->brain != NULL) 
+		{
+			delete this->brain;
+			this->brain = NULL;
+		}
+		this->brain = new Brain();
+		*(this->brain) = *(obj.brain);
+	}
 	std::cout << "Dog operator= called" << std::endl;
 	return (*this);
 }

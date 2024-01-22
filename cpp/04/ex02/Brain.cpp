@@ -16,8 +16,11 @@ Brain::Brain(const Brain& obj)
 
 Brain& Brain::operator=(const Brain& obj) 
 {
-	for (size_t i = 0; i < 100; i++)
+	if (this != &obj)
+	{
+		for (size_t i = 0; i < 100; i++)
 		this->ideas[i] = obj.getIdeas(i);
+	}
 	std::cout << "Brain operator= called" << std::endl;
 	return (*this);
 }

@@ -76,6 +76,7 @@ void Character::unequip(int idx)
 	{
 		for (int i = idx; i < this->idx; i++)
 			slot[i] = slot[i + 1];
+		slot[this->idx - 1] = NULL;
 		this->idx--;
 	}
 }
